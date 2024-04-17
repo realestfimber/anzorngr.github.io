@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Quicksand&family=Raleway:wght@700&display=swap');
+body{
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3.125rem;
+    background-color: rgb(216, 184, 190);
+    width: auto;
+    /* position:relative; */
+}
+#logo-banner h1{
+    font-size: 0.5625rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0)
+    font-size: x-small;
+    
+}
+#logo-banner a{ 
+    font-family: "Oleo Script", sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(128, 68, 68);
+    text-shadow: 1px 1px 2px yellow;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header li{
+    margin-left: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+}
+nav ul a:hover{
+    background-color: rgb(255, 247, 188);
+    color: black;
+}
+footer{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1.5rem 3.125rem;
+    border-radius: 1.5rem;
+    width: auto;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    /* background: red; */
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 0.9375rem;
+    border-width: 5px;
+    text-transform: uppercase;
+    color: rgb(255, 247, 188);
+    font-weight: bold;
+}
+.comment textarea{
+    border-radius: 0.05rem;
+    padding: 1.5rem;
+}
+.comment button{
+    width: 60px;
+    height: 1.875rem;
+    border-radius: 1.5rem;
+    border-width: 5px;
+    color: white;
+    background-color: red;
+    text-transform: uppercase;
+}
+.socials{
+    /* background-color: blue; */
+    padding: 0rem 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+.socials article{
+    text-align: center;
+    position: relative;
+    bottom: 1.25rem;
+    color: rgb(255, 255, 255);
+}
+.socials img{
+    width: 100px;
+}
+.socials h4{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(255, 247, 188);
+}
+.offices{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    /* background-color: yellow; */
+    padding: 0.9375rem;
+    text-align: center;
+}
+.offices h4{
+    text-align: center;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: rgb(255, 247, 188);
+    font-size: bold;
+}
+.offices p{
+    color: rgb(255, 255, 255);
+    font-size: bold;
+}
+.contact-method span{
+    color: rgb(255, 247, 188);
+    font-size: bold;
+}
+.menu-btn{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+.menu-btn span{
+    width: 100%;
+    height: 0.1875rem;
+    background-color: white;
+}
+/* Side Drawer styling */
+#side-drawer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 26, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+#side-drawer:target{
+    display: block;
+}
+#side-drawer header{
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5rem;
+}
+#side-drawer ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+#side-drawer li{
+    margin: 1rem 0;
+    text-align: center;
+}
+#side-drawer a{
+    color: rgb(253, 239, 213);
+    font-size: 2rem;
+    text-decoration: none;
+}
+.scroll-arrow{
+    background: rgb(177, 188, 230);
+    border-radius: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    scroll-behavior:smooth;
+}
+@media (max-width: 63.75rem){
+    header li{
+        font-size: 0.9375rem;
+    }
+    .footer-content{
+        display: block;
+    }
+    .socials{
+        text-align: center;
+    }
+
+}
+@media (max-width: 45.1875rem){
+    .menu-btn{
+        display: flex;
+    }
+    header nav{
+        display: none;
+    }
+    #logo-banner a{ 
+        font-family: "Oleo Script", sans-serif;
+        font-size: 2.5rem;
+    }
+    #logo-banner h1{
+        font-size: 0.3125rem;
+    }
+    .footer-content{
+        display: block;
+    }
+    .socials{
+        text-align: center;
+    }
+}
+

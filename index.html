@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANZOR NIG LTD</title>
-    <link rel="stylesheet" href="shared.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/shared.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <header>
@@ -16,11 +16,11 @@
         <nav>
             <ul>
                 <li><a href="">HOME</a></li>
-                <li><a href="vision.html">VISION</a></li>
+                <li><a href="#vision">VISION</a></li>
                 <!-- <li><a href="vision.html">MISSION</a></li> -->
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACTS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
             </ul>
         </nav>
         <a href="#side-drawer" class="menu-btn">
@@ -39,9 +39,9 @@
         </header>
         <nav>
             <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACTS</a></li>
+                <li><a class="link" href="#about">ABOUT</a></li>
+                <li><a class="link" href="#services">SERVICES</a></li>
+                <li><a class="link" href="#contact">CONTACTS</a></li>
             </ul>
         </nav>
     </aside>
@@ -51,16 +51,16 @@
                 <h1>welcome to anzor Nigeria limited</h1>
                 <p>we offer the best services to your satisfaction</p>
                 <div id="hero-btn">
-                    <a href="vision.html">OUR VISION</a>
-                    <a href="vision.html">OUR MISSION</a>
+                    <a class="link" href="#vision">OUR VISION</a>
+                    <a href="#vision">OUR MISSION</a>
                 </div>
             </div>
         </section>
         <section id="content">
                 <ul>
-                    <li>
+                    <li id="item-content">
                         <img src="image/ourvision.jpg" alt="">
-                        <div id="item-content">
+                        <div class="section" id="vission">
                                 <h3>VISION</h3>
                                 <p>Anzor (Nigeria) Limited vision is to hold a formidable position as a 	technical and logistics support service firm in the oil and gas industry. 	Also to contribute meaningfully to the growth of the industry and to 	regarded as a dependable  partner  by our clients, stakeholders, 	business associates and our host communities.</p>
 
@@ -68,10 +68,21 @@
                     </li>
                 </ul>
                 <ul>
-                    <li>
-                        <div id="item-content">
+                    <li id="item-content">
+                        <div class="section" id="mission">
                                 <h3>MISSION</h3>
                                 <p>Our mission is to offer the best engineering/technical and logistics 	support services to our clients at the best possible price without 	compromising standards and  professionalism.
+                                </p>
+
+                        </div>
+                            <img src="image/ourmission.webp" alt="">
+                    </li>
+                </ul>
+                <ul>
+                    <li id="item-content">
+                        <div class="section" id="about">
+                                <h3>ABOUT</h3>
+                                <p>We offer the best engineering/technical and logistics 	support services to our clients at the best possible price without 	compromising standards and  professionalism.
                                 </p>
 
                         </div>
@@ -106,7 +117,7 @@
                             <h4>Head office</h4>
                             <p>3 Market Road, Rumuomasi, Port Harcourt. Rivers State.</p>
                         </div>
-                        <div class="contact-method">
+                        <div id="contant" ="contact-method">
                             <h4>Contacts</h4>
                             <p><span>Phone:</span> +2348035080951, 08035263572</p>
                             <p><span>Email:</span> anzor_ng@yahoo.com</p>
